@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="crud">
+        <div class ="head"> 
+            <h2>crud</h2>
+            <p>Product Management System</p>
+        </div>
+
+        <div class ="input"> 
+            <input placeholder="title" type="text" id ="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type ="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type ="number" id="price" placeholder="price"> 
+                <input onkeyup="getTotal()" type ="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type ="number" id="discount" placeholder="discount">
+                <small id="total">32132</small>
+            </div>
+            <input placeholder="count" type="number" id ="count">
+            <input placeholder="category" type="text" id ="category">
+            <button id="submit">Creat</button>
+            
+            
+        </div> 
+            
+            
+                   
+        <div class ="output"> 
+            <div class="seachBlock">
+                <input type="text" id="seach" placeholder="seach">
+                <div class="btnSearch">
+                    <button id="searchTitle">search By Title</button>
+                    <button id="searchCategory">search By Category</button>
+
+                </div>
+
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+
+                    </tr>
+                    <tbody>
+                        <td>ipon</td>
+                        <td>223</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>99</td>
+
+                        <td>ipon</td>
+                        <td>223</td>
+                        <td>2</td>
+                        <td>1</td>
+
+                        <tr>
+                            <td>ipon</td>
+                        <td>223</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>99</td>
+
+                        <td>samsung</td>
+                        <td>oled</td>
+                        <td>2</td>
+                        <td>1</td>
+                        </tr>
+
+                        
+                    </tbody>
+
+
+                </table>
+
+            </div>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
